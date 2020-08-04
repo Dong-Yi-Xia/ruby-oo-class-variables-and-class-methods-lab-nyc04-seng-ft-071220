@@ -18,7 +18,7 @@ class Song
         # binding.pry
     end
 
-    def self.count  
+    def self.count
         @@count
     end
 
@@ -34,7 +34,7 @@ class Song
         genre_array = self.genres
         genre_hash = {}
         genre_array.each do |name|
-            genre_hash[name] = @@genres.count{|x| x == name} 
+            genre_hash[name] = @@genres.count{|x| x == name}
         end
         genre_hash
     end
@@ -43,7 +43,7 @@ class Song
         artist_array = self.artists
         artist_hash = {}
         artist_array.each do |name|
-            artist_hash[name] = @@artists.count{|x| x == name} 
+            artist_hash[name] = @@artists.count{|x| x == name}
         end
         artist_hash
         # binding.pry
